@@ -56,6 +56,9 @@ if not API_HASH:
     LOGS.error("API Hash is not set! Check your config.env. Halting!")
     quit(1)
 
+HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY") or None
+HEROKU_APPNAME = os.environ.get("HEROKU_APPNAME") or None
+
 STRING_SESSION = os.environ.get("STRING_SESSION") or None
 
 BOTLOG = (os.environ.get("BOTLOG") == 'True')
@@ -75,7 +78,7 @@ TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY",
                                          
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Shiroikun/MiniPlane.git")
+    "https://github.com/Shiroikun/Miniplane.git")
 
 # pylint: disable=invalid-name
 if STRING_SESSION:
