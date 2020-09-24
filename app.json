@@ -13,6 +13,7 @@
     "repository": "https://github.com/Shiroikun/Miniplane",
     "website": "https://github.com/Shiroikun/Miniplane",
     "stack": "container",
+    "success_url": "/"
     "env": {
         "API_KEY": {
             "description": "Get from https://my.telegram.org/.",
