@@ -13,7 +13,7 @@ from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 from userbot import LOGS, bot
 from userbot.modules import ALL_MODULES
 
-INVALID_PH = '\nERROR: The phone no. entered is incorrect' \
+INVALID_PH = '\nERROR: Entered phone number is incorrect' \
              '\n  Tip: Use country code (eg +44) along with num.' \
              '\n       Recheck your phone number'
 
@@ -26,7 +26,7 @@ except PhoneNumberInvalidError:
 for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
-LOGS.info("MiniPlane is alive! Test it by typing .alive on any chat.\n This is unofficial fork but you may probably try getting help from t.me/tgpaperplane")
+LOGS.info("MiniPlane is alive! Test it by typing .alive on any chat.\nThis is unofficial fork but you may probably try getting help from t.me/tgpaperplane")
 
 SEM_TEST = os.environ.get("SEMAPHORE", None)
 if SEM_TEST:
