@@ -18,12 +18,10 @@
         "API_KEY": {
             "description": "Get from https://my.telegram.org/.",
             "required": true
-            "value": "123456",
         },
         "API_HASH": {
             "description": "Get from https://my.telegram.org/.",
             "required": true
-            "value": "123456789",
         },
         "STRING_SESSION": {
             "description": "type 'python3 generate_string_session.py' on terminal to get the string code.",
