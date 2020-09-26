@@ -133,7 +133,7 @@ async def fedban_all(msg):
                     )
             continue
         async with bot.conversation(bangroup) as conv:
-            await conv.send_message(f"!fban {banid} {banreason}")
+            await conv.send_message(f"/fban {banid} {banreason}")
             resp = await conv.get_response()
             await bot.send_read_acknowledge(conv.chat_id)
             if "Beginning federation ban " not in resp.text:
