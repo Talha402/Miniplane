@@ -108,7 +108,7 @@ async def fedban_all(msg):
                 raise TypeError
         except TypeError:
             banreason = "[userbot] fban"
-        if "spam" in banreason:
+        if "cp" in banreason:
             spamwatch = True
         else:
             spamwatch = False
