@@ -83,7 +83,6 @@ async def fedban_all(msg):
     if textx:
         try:
             banreason = "[userbot] "
-            banreason += banreason.join(msg.text.split(" ")[1:])
             if banreason == "[userbot]":
                 raise TypeError
         except TypeError:
