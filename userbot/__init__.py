@@ -72,9 +72,6 @@ MONGO_DB_URI = os.environ.get("MONGO_DB_URI") or None
 SCREENSHOT_LAYER_ACCESS_KEY = os.environ.get("SCREENSHOT_LAYER_ACCESS_KEY") or None
 
 WELCOME_MUTE = (os.environ.get("WELCOME_MUTE") == 'True')
-
-TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY",
-                                         "./downloads")
                                          
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
