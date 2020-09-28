@@ -24,6 +24,7 @@ async def gban_all(msg):
     if textx:
         try:
             banreason = "[userbot] "
+            banreason += banreason.join(msg.text.split(" ")[1:])
             if banreason == "[userbot]":
                 raise TypeError
         except TypeError:
@@ -43,6 +44,7 @@ async def gban_all(msg):
                 ban_id = probable_user_mention_entity.user_id
         try:
             banreason = "[userbot] "
+            banreason += banreason.join(msg.text.split(" ")[2:])
             if banreason == "[userbot]":
                 raise TypeError
         except TypeError:
@@ -100,6 +102,7 @@ async def fedban_all(msg):
                 ban_id = probable_user_mention_entity.user_id
         try:
             banreason = "[userbot] "
+            banreason += banreason.join(msg.text.split(" ")[2:])
             if banreason == "[userbot]":
                 raise TypeError
         except TypeError:
